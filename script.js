@@ -16,15 +16,12 @@ function onMouseUp() {
         if (range.startContainer.parentElement.parentElement.localName === "article" || range.startContainer.parentElement.localName === "article") {
             var temp = document.querySelector('#shareBoxTemplate');
             range.collapse(false);
-            //range.insertNode(document.importNode(temp.content, true));
-            //console.log(document.importNode(temp.content, true));
-            document.querySelector('article').appendChild(document.importNode(temp.content, true));
-            //var shareBox = document.querySelector('article #shareBox');
-            //console.log(shareBox);
-            //shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
-            //var shareBtn = shareBox.querySelector('button');
-            //shareBtn['shareTxt'] = txt;
-            //shareBtn.addEventListener('mousedown', onShareClick, true);
+            range.insertNode(document.importNode(temp.content, true));
+            var shareBox = document.querySelector('article #shareBox');
+            shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
+            var shareBtn = shareBox.querySelector('button');
+            shareBtn['shareTxt'] = txt;
+            shareBtn.addEventListener('mousedown', onShareClick, true);
         }
     }
 }
