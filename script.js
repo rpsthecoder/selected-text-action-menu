@@ -18,7 +18,7 @@ function onMouseUp() {
             range.collapse(false);
             range.insertNode(document.importNode(temp.content, true));
             var shareBox = document.querySelector('article #shareBox');
-            shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
+            //shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
             var shareBtn = shareBox.querySelector('button');
             shareBtn['shareTxt'] = txt;
             shareBtn.addEventListener('mousedown', onShareClick, true);
