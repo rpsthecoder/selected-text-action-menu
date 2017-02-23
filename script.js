@@ -18,7 +18,7 @@ function onMouseUp() {
             range.collapse(false);
             //range.insertNode(document.importNode(temp.content, true));
             //console.log(document.importNode(temp.content, true));
-            document.appendChild(document.importNode(temp.content, true));
+            document.querySelector('article').appendChild(document.importNode(temp.content, true));
             //var shareBox = document.querySelector('article #shareBox');
             //console.log(shareBox);
             //shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
