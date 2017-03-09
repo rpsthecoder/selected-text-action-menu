@@ -27,7 +27,7 @@ function onMouseUp() {
 }
 
 function onShareClick() {
-    alert(`Ready to share the following text:\n\n${this.shareTxt}\n`);
+    window.open(`https://twitter.com/intent/tweet?text=${this.shareTxt}`);
     this.remove();
     document.getSelection().removeAllRanges()
 }
