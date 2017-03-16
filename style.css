@@ -17,6 +17,17 @@
     background-position: center;
     background-size: 70%;
 }
+#shareBox > button::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 10px solid black;
+	border-left:10px solid transparent;
+	border-right: 10px solid transparent;
+	left: 5px;
+	top: 30px;	
+}
 p {
     overflow: visible;
 }
