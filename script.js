@@ -11,7 +11,7 @@ function onMouseDown() {
 
 function onMouseUp() {
 	var sel = document.getSelection(),
-	txt = sel.toString();
+	    txt = sel.toString();
 	if (txt !== "") {
 		var range = sel.getRangeAt(0);
 		if (range.startContainer.parentElement.parentElement.localName === "article" || range.startContainer.parentElement.localName === "article") {
