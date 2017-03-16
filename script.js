@@ -3,7 +3,7 @@ document.addEventListener('mouseup', onMouseUp);
 
 function onMouseDown() {
     document.getSelection().removeAllRanges();
-    var shareBox = document.querySelector('article #shareBox');
+    var shareBox = document.querySelector('#shareBox');
     if (shareBox !== null)
         shareBox.remove();
 }
@@ -15,10 +15,11 @@ function onMouseUp() {
         var range = sel.getRangeAt(0);
         if (range.startContainer.parentElement.parentElement.localName === "article" || range.startContainer.parentElement.localName === "article") {
             var temp = document.querySelector('#shareBoxTemplate');
-            range.collapse(false);
-            range.insertNode(document.importNode(temp.content, true));
-            var shareBox = document.querySelector('article #shareBox');
-            shareBox.style.top = `calc(${getComputedStyle(shareBox).top} - 30px)`;
+            document.body.insertBefore(document.importNode(temp.content, true), temp);
+		    var rect = range.getBoundingClientRect();
+            var shareBox = document.querySelector('#shareBox');
+            shareBox.style.top = `calc(${rect.top}px - 38px)`;
+		    shareBox.style.left = `calc(${rect.left}px + calc(${rect.width}px / 2) - 30px)`;
             var shareBtn = shareBox.querySelector('button');
             shareBtn['shareTxt'] = txt;
             shareBtn.addEventListener('mousedown', onShareClick, true);
