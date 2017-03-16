@@ -4,5 +4,5 @@ You might’ve seen this feature in many online editors or blogs, where, when yo
 
 In my demo, I’ve created something similar: on selecting text, a button appears near the selection, on clicking which you‘ll be prompted to tweet the selected text.
 
-&#x21e2; <a href="http://bit.ly/selectedTextMenu" target=_blank>Github Demo Page</a>  
-&#x21e2; <a href="http://codepen.io/rpsthecoder/details/evYGwB" target=_blank>Codepen Pen</a>
+
+<a href="http://bit.ly/selectedTextMenu" target=_blank title='View the Demo Page'><img src='https://octodex.github.com/images/original.png' alt='Github Demo Page' width=60px></a>   <a href="http://codepen.io/rpsthecoder/details/evYGwB" target=_blank title='View the Codepen Pen'><img src='http://blog.codepen.io/wp-content/uploads/2012/06/TryItOn-CodePen.png' alt='Codepen Pen' height=60px></a>
