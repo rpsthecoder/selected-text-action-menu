@@ -51,5 +51,5 @@ body{
 	color: white;
 	padding: 4px 6px 4px 6px;
 	text-shadow: 0 4px 0 #000;
-	box-shadow: hsl(210, 25%, 50%) 0 0 2px;
+	box-shadow: #000 0 0 2px;
 }
