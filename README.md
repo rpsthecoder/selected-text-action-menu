@@ -1,4 +1,4 @@
-# Add (Tweet) Action Menu to Selected Text
+# Add Action Menu to Selected Text
 
 <br>
 
